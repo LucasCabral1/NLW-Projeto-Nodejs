@@ -1,10 +1,11 @@
+//Criação de tabelas no banco de dados(SQLite) utilizando migrations
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
 export class CreateSettings1618953371650 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
-            new Table({
+            new Table({ 
                 name: 'settings',
                 columns:[
                     {
