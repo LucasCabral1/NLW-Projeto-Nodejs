@@ -1,4 +1,5 @@
 import express from 'express' // ... -> significa que precisa ser instalado a tipagem do express
+import './database/index'
 const app = express() // executar o express
 
 /*
